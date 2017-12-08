@@ -1,0 +1,148 @@
+* {
+	margin:0;
+	padding:0;
+	text-align:center;
+}
+html {
+	height:100%;
+	width:100%;
+}
+
+body {
+	height:100%;
+	width:100%;
+	overflow:hidden;
+}
+
+.fullPage {
+	height:100%;
+	width:100%;
+	overflow:hidden;
+	position:absolute;
+	top:100%;
+	color:white;
+}
+
+.placeHolder {
+	height:150px;
+	padding:200px 0 0 0;
+	width:100%;
+	color:black;
+}
+
+#home {
+	background-color:#59F;
+	display:block;
+	top:0;
+}
+
+#photo {
+	margin:0 auto 50px auto;
+	width:200px;
+	height:200px;
+	overflow:hidden;
+	border-radius:100px;
+}
+
+#photo img{
+	position:relative;
+	top:-20px;
+	width:200px;
+}
+
+li{
+	list-style-type:none;
+	font-size:20px;
+	color:white;
+	padding:5px;
+}
+
+#rightNav {
+	height:100%;
+	width:200px;
+	z-index: 3;
+	position:fixed;
+	right:100px;
+	top:0;
+}
+
+#rightNav ul {
+	height:200px;
+	width:100%;
+	left:0; right:0; top:0; bottom:0;
+	position:absolute;
+	margin:auto;
+}
+
+#rightNav ul li {
+	margin:20px;
+	padding:10px;
+	background-color: black;
+	opacity:0.5;
+	width:20px;
+	overflow:hidden;
+	transition:width 0.5s;
+}
+
+#rightNav ul li:hover {
+	width:200px;
+}
+
+@font-face {
+	font-family: "icomoon";
+	src: url("../fonts/icomoon.eot") format("embedded-opentype")
+		,url("../fonts/icomoon.woff") format("woff")
+		,url("../fonts/icomoon.ttf") format("truetype")
+		,url("../fonts/icomoon.svg") format("svg");
+		font-weight: normal;
+		font-style: normal;
+}
+
+[class^="icon"] {
+	font-family: "icomoon" !important;
+	font-style:normal;
+	font-weight: normal;
+	font-size:20px;
+}
+
+.iconHome:before {
+	content: "\e902";
+	padding-right:10px;
+}
+
+.iconExp:before {
+	content: "\e923 ";
+	padding-right:10px;
+}
+
+.iconPro:before {
+	content: "\e925 ";
+	padding-right:10px;
+}
+
+.iconCon:before {
+	content: "\e96b ";
+	padding-right:10px;
+}
+
+#experience {
+	background-color: #D47;
+}
+
+#projects {
+	background-color: #C58;
+}
+
+#contact {
+	background-color: #9C9;
+}
+
+@keyframes moveIn {
+	from {top:100%;}
+	to {top:0;}
+}
+
+@keyframes moveOut {
+	from {top:0;}
+	to {top:-100%;}
+}
