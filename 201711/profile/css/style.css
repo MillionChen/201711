@@ -146,3 +146,25 @@ li{
 	from {top:0;}
 	to {top:-100%;}
 }
+
+.project {
+	height:100px;
+	line-height: 100px;	
+	width:300px;
+	background-color: #C22;
+	vertical-align: middle;
+	margin:20px auto;
+}
+
+a:link {
+	color:#FFF;
+	text-decoration: none;
+}
+a:visited {
+	color:#FFF;
+	text-decoration: none;
+}
+a:hover {
+	color:#FFF;
+	text-decoration: none;
+}
